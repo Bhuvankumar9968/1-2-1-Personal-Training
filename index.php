@@ -1,9 +1,10 @@
     <?php
+    $email = $_POST['email'];
     use Phppot\Subscriber;
-        require_once './Model/subscribers.php';
+        require_once 'Model/subscribers.php';
         $subscriber = new Subscriber();
-        // $registrationResponse = $subscriber->subscribeEmail();
-    
+        $registrationResponse = $subscriber->subscribeEmail();
+        
     ?>
     
 
@@ -29,10 +30,10 @@
             <div class="toggle"></div>
             <div class="navbar">
                 <ul class="navbar_list">
-                    <li><a href="#footer">about us</a></li>
-                    <li><a href="">priceing</a></li>
-                    <li><a href="">our statistics</a></li>
-                    <li><a href="">subscribe</a></li>
+                    <li><a href="#footer">contact us</a></li>
+                    <li><a href="#priceing">priceing</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="./user-registration.php">signup</a></li>
                 </ul>
             </div>
         </nav>
@@ -40,7 +41,7 @@
             <div class="headertext">
                 <h1 class="abcd">WAKE UP!</h1>
                 <h2>It's time to take action</h2>
-                <p>Find affordable personal trainer worldwide aand get personalized training in the palm of your hand</p>
+                <p>Find affordable personal trainer worldwide and get personalized training in the palm of your hand</p>
                 <form action="login.php" method="post">
                     <button type="submit">login here</button>
                 </form>
@@ -90,16 +91,16 @@
                 <img src="./assets/images/card2.png" alt="" srcset="">
                 <div class="card_content">
                     <h5>100% bespoke programme design</h5>
-                    <p>following an in-dipeth movement assessment and based on your roadmap. wh don't do cookie-cutter,
+                    <p>following an in-depth movement assessment and based on your roadmap. we don't do cookie-cutter,
                         everything is designed with your progress and lifstyle in mind</p>
                 </div>
             </div>
             <dic class="card card2">
                 <img src="./assets/images/card3.png" alt="" srcset="">
                 <div class="card_content">
-                    <h5 style="padding-top:10px;">1-2-1 netrition coaching</h5>
+                    <h5 style="padding-top:10px;">1-2-1 neutrition coaching</h5>
                     <p>to ensure all the works your're putting in at the studio? is reflected by your results. without
-                        the restri tive diets or strict eating re-gimes-take back control and make progress on your
+                        the restritive diets or strict eating re-gimes-take back control and make progress on your
                         terms, with our expert, non-judgement guidance</p>
                 </div>
             </dic>
@@ -111,9 +112,9 @@
     <!-- third container -->
     <div class="cont3 container">
 
-        <h2>priceing</h2>
+        <h2>pricing</h2>
 
-        <div class="cont3_cards">
+        <div class="cont3_cards" id="priceing">
             <div class="cont3_card">
                 <img src="./assets/images/pricetag.png" alt="" srcset="">
                 <h3>basic</h3>
@@ -141,7 +142,7 @@
 
 
     <!-- fourth container -->
-    <div class="cont4 container">
+    <div class="cont4 container" id="features">
 
         <div class="leftimg">
             <img src="./assets/images/bcg1.png" alt="" srcset="">
@@ -152,7 +153,7 @@
         </div>
         <div class="leftcontent">
             <h1>a covid-secure training environment</h1>
-            <p>being a private,client-only studio gives us the chance to be head and shoulders above the industry standards with mask upon entry, social disancing protocos ad-hered to (so you don't need to weare a mask when training!). no sharing of equipment, disinfectiong systems between sessions and ample sanitizer statiion around the gym, we put your health and safety first.</p>
+            <p>being a private,client-only studio gives us the chance to be head and shoulders above the industry standards with mask upon entry, social disancing protocos ad-hered to (so you don't need to weare a mask when training!). no sharing of equipment, disinfecting systems between sessions and ample sanitizer stations around the gym, we put your health and safety first.</p>
         </div>
         <div class="rightimg">
             <img src="./assets/images/bcg2.png" alt="" srcset="">
@@ -197,7 +198,9 @@
                 <input type="email" placeholder="Your Email" name="email" id="email">
                 <button name="subscribe" id="subscribe">subscribe</button>
             </form>
-
+    <!-- <script type="text/javascript">
+        console.log("<?php echo"$email"?>");
+    </script> -->
  
         </div>
         <div class="footer">
