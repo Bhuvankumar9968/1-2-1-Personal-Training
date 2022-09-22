@@ -14,7 +14,7 @@ Develop a dynamic website that focuses on weight loss, weight gain, and overall 
 - Views can be authenticated via `session` or `auth token`
 - Supports only one email per user(as model field)
 
-can check the project demo [here](https://samhith101.netlify.app/)
+can check the project demo [here](http://samhith.infinityfreeapp.com/)
 
 ## screenshot
-![preview on desktop view](https://github.com/SamhithMR/1-On-1-Personal-training/blob/main/resourses/preview.jpg)
+![preview on desktop view](https://github.com/SamhithMR/1-On-1-Personal-training/blob/main/assets/images/preview.jpg)
