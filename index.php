@@ -1,13 +1,13 @@
-    <?php
-    $email = $_POST['email'];
-    use Phppot\Subscriber;
-        require_once 'Model/subscribers.php';
-        $subscriber = new Subscriber();
-        $registrationResponse = $subscriber->subscribeEmail();
-        
-    ?>
-    
+<?php
+$email = $_POST['email'];
 
+use Phppot\Subscriber;
+
+require_once 'Model/subscribers.php';
+$subscriber = new Subscriber();
+$registrationResponse = $subscriber->subscribeEmail();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,8 +24,7 @@
     <div class="cont1 container">
         <nav>
             <div class="logo">
-                <img src="./assets/images/logo.png" alt="" srcset="">
-                <img src="./assets/images/logo_subtitle.png" alt="" srcset="">
+                <img src="./assets/images/logo.jpeg" alt="" srcset="">
             </div>
             <div class="toggle"></div>
             <div class="navbar">
@@ -56,16 +55,15 @@
     </div>
 
 
-<!-- javascript for toggling navbar -->
-<script>
-     const toggle = document.querySelector('.toggle')
-    const navbar = document.querySelector('.navbar')
-    toggle.onclick=function()
-    {
-        toggle.classList.toggle('active')
-        navbar.classList.toggle('active')
-    }
-</script>
+    <!-- javascript for toggling navbar -->
+    <script>
+        const toggle = document.querySelector('.toggle')
+        const navbar = document.querySelector('.navbar')
+        toggle.onclick = function() {
+            toggle.classList.toggle('active')
+            navbar.classList.toggle('active')
+        }
+    </script>
 
     <!-- second container -->
     <div class="cont2 container">
@@ -194,14 +192,14 @@
         <div class="subscribe">
             <h1>SUBSCRIBE</h1>
 
-            <form name="subscribe" action="" method="post" >
+            <form name="subscribe" action="" method="post">
                 <input type="email" placeholder="Your Email" name="email" id="email">
                 <button name="subscribe" id="subscribe">subscribe</button>
             </form>
-    <!-- <script type="text/javascript">
-        console.log("<?php echo"$email"?>");
+            <!-- <script type="text/javascript">
+        console.log("<?php echo "$email" ?>");
     </script> -->
- 
+
         </div>
         <div class="footer">
             <div class="info footeritems">
